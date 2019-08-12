@@ -1,13 +1,20 @@
 const url = require('url');
 
+const { route } = require('./router');
+const { SUCCESS } = require('./contants');
+
+const EMPTY_PAYLOAD = {};
+
 const runServer = (req, res) => {
     const { pathname } = url.parse(req.url, true);
 
-    const path = pathname.replace(/^\/+|\/+$/g, '');
+    const routeHandler = route(pathname);
 
-    res.setHeader('Content-Type', 'application/json');
-    res.writeHead(200);
-    res.end(JSON.stringify({ greetings: 'Hello World!' }));
+    routeHandler((statusCode = SUCCESS, payload = EMPTY_PAYLOAD) => {
+        res.setHeader('Content-Type', 'application/json');
+        res.writeHead(statusCode);
+        res.end(JSON.stringify(payload));
+    });
 };
 
 module.exports = {
