@@ -13,7 +13,6 @@ handlers.hello = (context, callback) => {
         
         if (isUndefined(helloWorld)) {
             callback(NOT_FOUND_HTTP_CODE);
-            
         } else {
             callback(SUCCESS_HTTP_CODE, helloWorld);
         }
