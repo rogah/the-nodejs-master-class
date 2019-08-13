@@ -21,11 +21,15 @@ const getHttpsOptions = (options = {}) => ({
 });
 
 const runServer = (req, res) => {
-    const { pathname } = url.parse(req.url, true);
+    const { pathname, query } = url.parse(req.url, true);
 
     const routeHandler = route(pathname);
 
-    routeHandler((statusCode = SUCCESS_HTTP_CODE, payload = EMPTY_PAYLOAD) => {
+    const context = {
+        query,
+    };
+
+    routeHandler(context, (statusCode = SUCCESS_HTTP_CODE, payload = EMPTY_PAYLOAD) => {
         res.setHeader('Content-Type', 'application/json');
         res.writeHead(statusCode);
         res.end(JSON.stringify(payload));
