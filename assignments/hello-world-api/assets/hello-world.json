@@ -1,0 +1,372 @@
+[
+  {
+    "locale": "af_ZA",
+    "name": "Afrikaans",
+    "phrase": "Hello Wêreld!"
+  },
+  {
+    "locale": "sq_AL",
+    "name": "Albanian",
+    "phrase": "Përshendetje Botë!"
+  },
+  {
+    "locale": "am_ET",
+    "name": "Amharic",
+    "phrase": "ሰላም ልዑል!"
+  },
+  {
+    "locale": "ar_SA",
+    "name": "Arabic",
+    "phrase": "مرحبا بالعالم!"
+  },
+  {
+    "locale": "hy_AM",
+    "name": "Armenian",
+    "phrase": "Բարեւ աշխարհ!"
+  },
+  {
+    "locale": "eu_ES",
+    "name": "Basque",
+    "phrase": "Kaixo Mundua!"
+  },
+  {
+    "locale": "be_BY",
+    "name": "Belarussian",
+    "phrase": "Прывітанне Сусвет!"
+  },
+  {
+    "locale": "bn_BD",
+    "name": "Bengali",
+    "phrase": "ওহে বিশ্ব!"
+  },
+  {
+    "locale": "bg_BG",
+    "name": "Bulgarian",
+    "phrase": "Здравей свят!"
+  },
+  {
+    "locale": "ca_ES",
+    "name": "Catalan",
+    "phrase": "Hola món!"
+  },
+  {
+    "locale": "ny",
+    "name": "Chichewa",
+    "phrase": "Moni Dziko Lapansi!"
+  },
+  {
+    "locale": "zh_CN",
+    "name": "Chinese",
+    "phrase": "你好世界！"
+  },
+  {
+    "locale": "hr_HR",
+    "name": "Croatian",
+    "phrase": "Pozdrav svijete!"
+  },
+  {
+    "locale": "cs_CZ",
+    "name": "Czech",
+    "phrase": "Ahoj světe!"
+  },
+  {
+    "locale": "da_DK",
+    "name": "Danish",
+    "phrase": "Hej Verden!"
+  },
+  {
+    "locale": "nl_NL",
+    "name": "Dutch",
+    "phrase": "Hallo Wereld!"
+  },
+  {
+    "locale": "en",
+    "name": "English",
+    "phrase": "Hello World!"
+  },
+  {
+    "locale": "et_EE",
+    "name": "Estonian",
+    "phrase": "Tere maailm!"
+  },
+  {
+    "locale": "fi_FI",
+    "name": "Finnish",
+    "phrase": "Hei maailma!"
+  },
+  {
+    "locale": "fr_FR",
+    "name": "French",
+    "phrase": "Bonjour monde!"
+  },
+  {
+    "locale": "fy_NL",
+    "name": "Frisian",
+    "phrase": "Hallo wrâld!"
+  },
+  {
+    "locale": "ka_GE",
+    "name": "Georgian",
+    "phrase": "გამარჯობა მსოფლიო!"
+  },
+  {
+    "locale": "de_DE",
+    "name": "German",
+    "phrase": "Hallo Welt!"
+  },
+  {
+    "locale": "el_GR",
+    "name": "Greek",
+    "phrase": "Γειά σου Κόσμε!"
+  },
+  {
+    "locale": "ha_NG",
+    "name": "Hausa",
+    "phrase": "Sannu Duniya!"
+  },
+  {
+    "locale": "he_IL",
+    "name": "Hebrew",
+    "phrase": "שלום עולם!"
+  },
+  {
+    "locale": "hi_IN",
+    "name": "Hindi",
+    "phrase": "नमस्ते दुनिया!"
+  },
+  {
+    "locale": "hu_HU",
+    "name": "Hungarian",
+    "phrase": "Helló Világ!"
+  },
+  {
+    "locale": "is_IS",
+    "name": "Icelandic",
+    "phrase": "Halló heimur!"
+  },
+  {
+    "locale": "ig_NG",
+    "name": "Igbo",
+    "phrase": "Ndewo Ụwa!"
+  },
+  {
+    "locale": "id_ID",
+    "name": "Indonesian",
+    "phrase": "Halo Dunia!"
+  },
+  {
+    "locale": "it_IT",
+    "name": "Italian",
+    "phrase": "Ciao mondo!"
+  },
+  {
+    "locale": "ja_JP",
+    "name": "Japanese",
+    "phrase": "こんにちは世界！"
+  },
+  {
+    "locale": "kk_KZ",
+    "name": "Kazakh",
+    "phrase": "Сәлем Әлем!"
+  },
+  {
+    "locale": "km_KH",
+    "name": "Khmer",
+    "phrase": "សួស្តី​ពិភពលោក!"
+  },
+  {
+    "locale": "ky_KG",
+    "name": "Kyrgyz",
+    "phrase": "Салам дүйнө!"
+  },
+  {
+    "locale": "lo_LA",
+    "name": "Lao",
+    "phrase": "ສະ​ບາຍ​ດີ​ຊາວ​ໂລກ!"
+  },
+  {
+    "locale": "lv_LV",
+    "name": "Latvian",
+    "phrase": "Sveika pasaule!"
+  },
+  {
+    "locale": "lt_LT",
+    "name": "Lithuanian",
+    "phrase": "Labas pasauli!"
+  },
+  {
+    "locale": "lb_LU",
+    "name": "Luxemburgish",
+    "phrase": "Moien Welt!"
+  },
+  {
+    "locale": "mk_MK",
+    "name": "Macedonian",
+    "phrase": "Здраво свету!"
+  },
+  {
+    "locale": "ms_MY",
+    "name": "Malay",
+    "phrase": "Hai dunia!"
+  },
+  {
+    "locale": "ml_IN",
+    "name": "Malayalam",
+    "phrase": "ഹലോ വേൾഡ്!"
+  },
+  {
+    "locale": "mn_MN",
+    "name": "Mongolian",
+    "phrase": "Сайн уу дэлхий!"
+  },
+  {
+    "locale": "my_MM",
+    "name": "Myanmar",
+    "phrase": "မင်္ဂလာပါကမ္ဘာလောက!"
+  },
+  {
+    "locale": "ne_NP",
+    "name": "Nepali",
+    "phrase": "नमस्कार संसार!"
+  },
+  {
+    "locale": "nb_NO",
+    "name": "Norwegian",
+    "phrase": "Hei Verden!"
+  },
+  {
+    "locale": "ps_AF",
+    "name": "Pashto",
+    "phrase": "سلام نړی!"
+  },
+  {
+    "locale": "fa_IR",
+    "name": "Persian",
+    "phrase": "سلام دنیا!"
+  },
+  {
+    "locale": "pl_PL",
+    "name": "Polish",
+    "phrase": "Witaj świecie!"
+  },
+  {
+    "locale": "pt_BR",
+    "name": "Portuguese",
+    "phrase": "Olá Mundo!"
+  },
+  {
+    "locale": "pa_IN",
+    "name": "Punjabi",
+    "phrase": "ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ ਦੁਨਿਆ!"
+  },
+  {
+    "locale": "ro_RO",
+    "name": "Romanian",
+    "phrase": "Salut Lume!"
+  },
+  {
+    "locale": "ru_RU",
+    "name": "Russian",
+    "phrase": "Привет мир!"
+  },
+  {
+    "locale": "gd_GB",
+    "name": "Scots Gaelic",
+    "phrase": "Hàlo a Shaoghail!"
+  },
+  {
+    "locale": "sr_RS",
+    "name": "Serbian",
+    "phrase": "Здраво Свете!"
+  },
+  {
+    "locale": "nso_ZA",
+    "name": "Sesotho",
+    "phrase": "Lefatše Lumela!"
+  },
+  {
+    "locale": "si_LK",
+    "name": "Sinhala",
+    "phrase": "හෙලෝ වර්ල්ඩ්!"
+  },
+  {
+    "locale": "sl_SI",
+    "name": "Slovenian",
+    "phrase": "Pozdravljen svet!"
+  },
+  {
+    "locale": "es_ES",
+    "name": "Spanish",
+    "phrase": "¡Hola Mundo!"
+  },
+  {
+    "locale": "su",
+    "name": "Sundanese",
+    "phrase": "Halo Dunya!"
+  },
+  {
+    "locale": "sw_TZ",
+    "name": "Swahili",
+    "phrase": "Salamu Dunia!"
+  },
+  {
+    "locale": "sv_SE",
+    "name": "Swedish",
+    "phrase": "Hej världen!"
+  },
+  {
+    "locale": "tg_TJ",
+    "name": "Tajik",
+    "phrase": "Салом Ҷаҳон!"
+  },
+  {
+    "locale": "th_TH",
+    "name": "Thai",
+    "phrase": "สวัสดีชาวโลก!"
+  },
+  {
+    "locale": "tr_TR",
+    "name": "Turkish",
+    "phrase": "Selam Dünya!"
+  },
+  {
+    "locale": "uk_UA",
+    "name": "Ukrainian",
+    "phrase": "Привіт Світ!"
+  },
+  {
+    "locale": "uz_UZ",
+    "name": "Uzbek",
+    "phrase": "Salom Dunyo!"
+  },
+  {
+    "locale": "vi_VN",
+    "name": "Vietnamese",
+    "phrase": "Chào thế giới!"
+  },
+  {
+    "locale": "cy_GB",
+    "name": "Welsh",
+    "phrase": "Helo Byd!"
+  },
+  {
+    "locale": "xh_ZA",
+    "name": "Xhosa",
+    "phrase": "Molo Lizwe!"
+  },
+  {
+    "locale": "yi_US",
+    "name": "Yiddish",
+    "phrase": "העלא וועלט!"
+  },
+  {
+    "locale": "yo_NG",
+    "name": "Yoruba",
+    "phrase": "Mo ki O Ile Aiye!"
+  },
+  {
+    "locale": "zu_ZA",
+    "name": "Zulu",
+    "phrase": "Sawubona Mhlaba!"
+  }
+]
