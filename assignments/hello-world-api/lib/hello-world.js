@@ -1,7 +1,7 @@
 const fs = require('fs');
 
-const { random } = require('../random');
-const { HELLO_WORLD_FILE_PATH } = require('../contants');
+const { random } = require('./random');
+const { HELLO_WORLD_FILE_PATH } = require('./contants');
 
 const helloList = JSON.parse(fs.readFileSync(HELLO_WORLD_FILE_PATH));
 
