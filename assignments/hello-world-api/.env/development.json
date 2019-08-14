@@ -6,8 +6,8 @@
     "https": {
         "port": 3001,
         "ssl": {
-            "cert": "./https/cert.pem",
-            "key": "./https/key.pem"
+            "cert": "./.https/cert.pem",
+            "key": "./.https/key.pem"
         }
     }
 }
