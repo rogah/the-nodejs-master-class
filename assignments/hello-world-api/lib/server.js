@@ -3,19 +3,17 @@ const fs = require('fs');
 const path = require('path');
 
 const { route } = require('./router');
-
-const KEY_FILE_PATH = path.resolve(__dirname, '../https/key.pem');
-const CERT_FILE_PATH = path.resolve(__dirname, '../https/cert.pem');
+const { https } = require('./config');
 
 const EMPTY_PAYLOAD = {};
 
-const DEFAULT_SERVER_OPTIONS = {
-    key: fs.readFileSync(KEY_FILE_PATH),
-    cert: fs.readFileSync(CERT_FILE_PATH),
+const defaultHttpsOptions = {
+    key: https.ssl.key,
+    cert: https.ssl.cert,
 };
 
 const getHttpsOptions = (options = {}) => ({
-    ...DEFAULT_SERVER_OPTIONS,
+    ...defaultHttpsOptions,
     ...options,
 });
 
