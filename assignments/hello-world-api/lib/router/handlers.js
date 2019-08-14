@@ -1,32 +1,29 @@
 const { getHelloWorld, randomHelloWorld } = require('../hello-world');
-const { SUCCESS_HTTP_CODE, NOT_FOUND_HTTP_CODE } = require('../contants');
 
-const isLocaleProvided = context => typeof(context.query) === 'object' && typeof(context.query.locale) === 'string';
+const HTTP_CODE_SUCCESS = 200;
+const HTTP_CODE_NOT_FOUND = 404;
 
-const isUndefined = value => typeof(value) === 'undefined';
+const isLocaleProvided = context =>
+    typeof(context.query) === 'object' && typeof(context.query.locale) === 'string';
 
 const handlers = {};
 
 handlers.hello = (context, callback) => {
-    if (isLocaleProvided(context)) {
-        const helloWorld = getHelloWorld(context.query.locale);
-        
-        if (isUndefined(helloWorld)) {
-            callback(NOT_FOUND_HTTP_CODE);
-        } else {
-            callback(SUCCESS_HTTP_CODE, helloWorld);
-        }
-    } else {
-        callback(SUCCESS_HTTP_CODE, randomHelloWorld());
+    if (!isLocaleProvided(context)) {
+        return callback(HTTP_CODE_SUCCESS, randomHelloWorld());
     }
+
+    const helloWorld = getHelloWorld(context.query.locale);
+
+    helloWorld ? callback(HTTP_CODE_SUCCESS, helloWorld) : callback(HTTP_CODE_NOT_FOUND);
 };
 
 handlers.ping = (context, callback) => {
-    callback(SUCCESS_HTTP_CODE);
+    callback(HTTP_CODE_SUCCESS);
 };
 
 handlers.notFound = (context, callback) => {
-    callback(NOT_FOUND_HTTP_CODE);
+    callback(HTTP_CODE_NOT_FOUND);
 };
 
 module.exports = handlers;

@@ -1,18 +1,17 @@
 const url = require('url');
 const fs = require('fs');
+const path = require('path');
 
 const { route } = require('./router');
-const {
-    SUCCESS_HTTP_CODE,
-    HTTPS_KEY_FILE_PATH,
-    HTTPS_CERT_FILE_PATH
-} = require('./contants');
+
+const KEY_FILE_PATH = path.resolve(__dirname, '../https/key.pem');
+const CERT_FILE_PATH = path.resolve(__dirname, '../https/cert.pem');
 
 const EMPTY_PAYLOAD = {};
 
 const DEFAULT_SERVER_OPTIONS = {
-    key: fs.readFileSync(HTTPS_KEY_FILE_PATH),
-    cert: fs.readFileSync(HTTPS_CERT_FILE_PATH),
+    key: fs.readFileSync(KEY_FILE_PATH),
+    cert: fs.readFileSync(CERT_FILE_PATH),
 };
 
 const getHttpsOptions = (options = {}) => ({
@@ -20,23 +19,24 @@ const getHttpsOptions = (options = {}) => ({
     ...options,
 });
 
-const runServer = (req, res) => {
+const serveContent = (req, res) => {
     const { pathname, query } = url.parse(req.url, true);
-
-    const routeHandler = route(pathname);
 
     const context = {
         query,
     };
 
-    routeHandler(context, (statusCode = SUCCESS_HTTP_CODE, payload = EMPTY_PAYLOAD) => {
-        res.setHeader('Content-Type', 'application/json');
-        res.writeHead(statusCode);
+    const routeHandler = route(pathname);
+
+    routeHandler(context, (statusCode = 200, payload = EMPTY_PAYLOAD) => {
+        res.writeHead(statusCode, {
+            'Content-Type': 'application/json'
+        });
         res.end(JSON.stringify(payload));
     });
 };
 
 module.exports = {
-    runServer,
+    serveContent,
     getHttpsOptions,
 };
