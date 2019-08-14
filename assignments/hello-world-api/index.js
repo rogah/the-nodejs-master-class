@@ -13,5 +13,5 @@ httpServer.listen(config.http.port, () => {
 const httpsServer = https.createServer(getHttpsOptions(), serveContent);
 
 httpsServer.listen(config.https.port, () => {
-    console.log(`HTTPS Server listening on port ${3001}.`);
+    console.log(`HTTPS Server listening on port ${config.https.port}.`);
 });
