@@ -3,13 +3,14 @@ const path = require('path');
 
 const helloWorld = require('./data');
 
+const supportedLocales = Object.keys(helloWorld);
+
 const random = (low, high) => Math.floor(Math.random() * (high - low) + low);
 
 const getHelloWorld = locale => helloWorld[locale];
 
 const randomHelloWorld = () => {
-    const locales = Object.keys(helloWorld);
-    const locale = locales[random(0, locales.length)];
+    const locale = supportedLocales[random(0, supportedLocales.length)];
     return getHelloWorld(locale);
 };
 
