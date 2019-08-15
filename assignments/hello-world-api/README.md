@@ -6,7 +6,7 @@ RESTful JSON API which fetches "Hello World!" in different languages.
 
 * `GET /hello` fetches "Hello World!" in different languanges randomly.
 
-* `GET /hello?locale=en_US` fetches "Hello World!" in different languanges randomly.
+* `GET /hello?locale=en_US` fetches "Hello World!" for a given locale.
 
 * `GET /ping` returns HTTP Status Code 200 if service is up and running.
 
