@@ -17,7 +17,7 @@ const getHttpsOptions = (options = {}) => ({
     ...options,
 });
 
-const onRouteProcess = (statusCode = 200, payload = EMPTY_PAYLOAD) => {
+const onRouteProcess = (req, res) => (statusCode = 200, payload = EMPTY_PAYLOAD) => {
     res.writeHead(statusCode, {
         'Content-Type': 'application/json'
     });
@@ -33,7 +33,7 @@ const serveContent = (req, res) => {
 
     const routeHandler = route(pathname);
 
-    routeHandler(context, onRouteProcess);
+    routeHandler(context, onRouteProcess(req, res));
 };
 
 module.exports = {
